@@ -1,12 +1,10 @@
-#ifndef DEBUGGER_H
-#define DEBUGGER_H
+#ifndef LOGGER_H
+#define LOGGER_H
 
 #include <string>
 #include <map>
 
-using namespace std;
-
-class Debugger
+class Logger
 {
 public:
   static const string color_red;
