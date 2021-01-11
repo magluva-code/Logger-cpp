@@ -1,11 +1,11 @@
 #include <iostream>
 #include "Logger.h"
 
-const string Debugger::color_red = "\x1b[31m";
-const string Debugger::color_green = "\x1b[32m";
-const string Debugger::color_blue = "\x1b[34m";
-const string Debugger::color_reset = "\x1b[0m";
-map <char, const string> Debugger::colors = {{'r', color_red}, {'g', color_green}, {'b', color_blue}};
+const string Logger::color_red = "\x1b[31m";
+const string Logger::color_green = "\x1b[32m";
+const string Logger::color_blue = "\x1b[34m";
+const string Logger::color_reset = "\x1b[0m";
+map <char, const string> Logger::colors = {{'r', color_red}, {'g', color_green}, {'b', color_blue}};
 
 void Logger::quick_out(string message, char color)
 {
