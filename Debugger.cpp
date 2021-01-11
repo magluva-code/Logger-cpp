@@ -1,8 +1,6 @@
 #include <iostream>
 #include "Debugger.h"
 
-using namespace std;
-
 const string Debugger::color_red = "\x1b[31m";
 const string Debugger::color_green = "\x1b[32m";
 const string Debugger::color_blue = "\x1b[34m";
@@ -14,7 +12,7 @@ void Debugger::quick_out(string message, char color)
   if (active)
   {
     msg = message;
-    std::cout << colors[color] << msg << colors[color] << color_reset << std::endl;
+    std::cout << colors[color] << msg << color_reset << std::endl;
   }
 }
 
